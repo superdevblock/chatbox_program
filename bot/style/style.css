@@ -1,0 +1,818 @@
+@font-face {
+    font-family: "proxima-nova";
+    src: url("ProximaNova-Regular.otf")  format("opentype");
+    
+  }
+  
+  
+  .avm-bot-get-started .get-started-link:after{
+      color: #fff;
+    content: "I Accept";
+    position: relative;
+      left: -35px;
+    
+  }
+  .avm-bot-get-started .welcome-message {
+    padding: 0px 14px;
+    font-size: 15px;
+    color: dimgray;
+  }
+  
+  a.privacy_doc {
+      text-decoration: none;
+      padding-left: 20px;
+      padding: 0px 34px;
+      color: #4282FE;
+  }
+  
+  .custom-welcome-message {
+      position: absolute;
+      bottom: 14%;
+  }
+  
+  .avm-bot-get-started .showcase-banner {
+      height: 50%;
+      background-size: 70%;
+      background-color: #f2f2f2;
+      background-position-y: center;
+  }
+  
+  
+  .avm-bot-get-started .get-started-link {
+  
+      padding: 8px;
+      background: #4282FE;
+      color: #4282FE;
+      text-decoration: none;
+      text-align: center;
+      right: 29px;
+      bottom: 14%;
+      position: absolute;
+      font-size: 14px;
+      order: 4;
+      border-radius: 4px;
+      margin: 0px;
+      width: fit-content;
+    font-family: "proxima-nova";
+      
+  }
+  .avm-bot-get-started {
+      font-family: "proxima-nova";
+      display: flex;
+    flex-direction: column;
+  }
+  
+  .avm-bot-get-started .welcome-message p {
+      margin: 0;
+      padding: 27px 20px;
+      color: #000;
+      line-height: 1.4;
+      text-align: left;
+      font-size: 105%;
+      overflow: auto;
+      min-height: 100px;
+  }
+  
+  
+  
+  body.avm-messenger a.close {
+    display: none
+  }
+  
+  
+  body.avm-messenger .carousel .navigator {
+  background: #4E6198;
+  opacity: 0.7;
+  }
+  
+  body.avm-messenger .nav-bar.messages_nav-bar {
+      background-color: #4282FE !important;
+  }
+  
+  body.avm-messenger .carousel .navigator:hover {
+  background: #4E6198;
+  opacity: 1;
+  }
+  
+  .scroll-element .card_carousel:last-child {
+   padding-right: 0 !important; 
+  }
+  
+  .avaamo__popup {
+      width: 425px !important;
+        bottom: 70px;
+  }
+  
+  .not-mine+.not-mine.sameUserSendMessage.carousel .media-body {
+      margin-left: -13px;
+  }
+  
+  body.avm-messenger .conversation-item.carousel .media-body {
+      padding: 0px;
+  }
+  
+  .webview_container .modal-dialog.tall {
+      height: 90%;
+  }
+  
+  
+  body.avm-messenger{
+   font-family: proxima-nova; 
+   font-size: 16px;
+   color:black;
+  }
+  
+  /* Custom BOT icon*/
+  .avaamo__icon {
+      border-radius: 50%;
+      background-image: url("animation-V2.gif");
+      background-size: contain;
+      position: fixed;
+  /*     padding: 5px; */
+        border: 3px solid #006ec6;
+        bottom: 5px;
+      right: 5px;
+  }
+  
+  .avm-messenger .avm-bot-icon {
+      border: 3px solid #006ec6;
+      display: none;
+  }
+  
+  #bot-menu-container .botMenu__title {
+    color: black;
+  }
+  
+  body.avm-messenger .botMenu__menu__item:hover, body.avm-messenger .button:hover, body.avm-messenger .default_card_link:hover, avm-svg-button:hover {
+      background: none !important;
+      border: 1px solid black !important;
+      color: black !important;
+  }
+  
+  body.avm-messenger .default_card_link:hover a {
+      color: black !important;
+  }
+  
+  .messages .profile-pic img {
+    border: 1px solid #E2E2E2;
+  }
+  
+  .avaamo__chat__widget.avm-messenger .avaamo__popup.draggable:not(.loading) {
+      background-color: #FFF !important;
+  }
+  
+  .avaamo__chat__widget.avm-messenger .avaamo__icon-close-icon {
+    background-color: #4282FE !important;
+  }
+  
+  .avaamo__chat__widget.avm-messenger .avaamo__icon-close-icon:hover {
+    background-color: #2E4679 !important;
+  }
+  
+  .avaamo__chat__widget.avm-messenger .avaamo__icon-close-icon:focus {
+    background-color: #4282FE !important;
+  }
+  
+  body.avm-messenger .messages .conversation-item {
+    padding: 0px 12px 5px 12px;
+  }
+  
+  body.avm-messenger .conversation-item.mine .media {
+      background-color: #4E6198;
+      border-radius: 6px 0px 6px 6px !important;
+  }
+  
+  body.avm-messenger .conversation-item.mine, #messages-list, .quick-reply-container {
+    background-color: inherit !important;
+  }
+  
+  body.avm-messenger .conversation-item.mine .media .desc {
+      color: #FFFFFF;
+  }
+  
+  body.avm-messenger .list-container, body.avm-messenger #messages-list .conversation-item.not-mine p.desc.text-content {
+    border: 1px solid #E2E2E2;
+    border-radius: 0px 9px 9px 9px;
+  }
+  
+  body.avm-messenger .item-subtitle {
+      display: block;
+      max-height: fit-content;
+  }
+  
+  .avm-messenger .date.ptr {
+      cursor: default;
+  }
+  
+  .avm-messenger .ptr.send {
+      background-repeat: no-repeat;
+      background-size: 18px;
+      background-position-x: center;
+      background-position-y: center;
+      width: 18px;
+      font-size: 0;
+      padding: 0;
+      background-image: url("../img/send%402x.png");
+      display: block !important;
+      height: 100%;
+      position: absolute;
+      bottom: -1px;
+      right: 10px;
+      min-height: 18px;
+  }
+  
+  .avm-messenger .ptr.switch-menu {
+      background-repeat: no-repeat;
+      background-size: 14px;
+      background-position-x: center;
+      background-position-y: center;
+      width: 14px;
+      font-size: 0;
+      padding: 0;
+      background-image: url("../img/menu%402x.png");
+      min-height: 14px;
+  }
+  
+  .compose-message-fields {
+      background-color: #fff;
+      border-top: 1px solid #E2E2E2;
+     
+  
+    
+  }
+  
+  body.avm-messenger .default_card .default_card_link,
+  body.avm-messenger .attachments .btnex,
+  body.avm-messenger a.quick-reply,
+  body.avm-messenger .button,
+  body.avm-messenger .botMenu__menu__item,
+  .avm-svg-button {
+      border: 1px solid #1563FF;
+      padding: 5px !important;
+      opacity: 1;
+      text-align: center;
+      color: #1563FF;
+        background: white;
+  }
+  
+  .avm-remove-button {
+    padding: 0px !important;
+    border: none;
+    opacity: 1;
+    color: black;
+    background: inherit;
+    font-weight: bold;
+  }
+  
+  .avm-svg-button {
+    margin-top: 15px;
+    width: 95% !important;
+    border-radius: 5px;
+  }
+  
+  body.avm-messenger .anchor, .botMenu__toggleMenu {
+        color: #1563FF !important;
+  }
+  
+  body.avm-messenger .default_card .default_card_link:target,
+  body.avm-messenger .attachments .btnex:focus,
+  body.avm-messenger a.quick-reply:focus,
+  body.avm-messenger .button:focus {
+      border: 1px solid black !important;
+      color: black !important;
+  }
+  
+  body.avm-messenger .default_card .default_card_link a:target{
+    color: black !important;
+  }
+  
+  body.avm-messenger .default_card .default_card_link,
+  body.avm-messenger .attachments .btnex,
+  body.avm-messenger .button,
+  body.avm-messenger .botMenu__menu__item {
+        width: 213px;
+      min-height: 20px;
+      border-radius: 2px !important;
+      font-size: 14px !important;
+  }
+  
+  body.avm-messenger .default_card .default_card_link,
+  body.avm-messenger .attachments .btnex,
+  body.avm-messenger .button {
+      margin: 0px auto 10px auto;
+  }
+  
+  body.avm-messenger a.quick-reply {
+      min-width: 50px;
+      /*height: 15px;*/
+      border-radius: 5px !important;
+      font-size: 14px !important;
+  }
+  
+  body.avm-messenger a.quick-reply:hover,
+  body.avm-messenger .default_card .success.btnex:hover {
+      background-color: inherit !important;
+        border: 1px solid black !important;
+      color: black !important;
+  }
+  
+  .btnex.default_card_submit:focus {
+      outline: none !important;
+  }
+  
+  .quick-reply-container .links-container {
+      text-align: left;
+      padding: 0 60px;
+  }
+  
+  body.avm-messenger .default_card>div {
+      border: none;
+  }
+  
+  body.avm-messenger .default_card>div:last-child {
+      border-radius: 0px !important;
+  }
+  
+  
+  body.avm-messenger .default_card {
+      padding-bottom: 5px !important;
+        border: 1px solid #E2E2E2;
+  }
+  
+  body.avm-messenger .button-container {
+      padding: 2px;
+  }
+  
+  body.avm-messenger .button-container a {
+      color: #1563FF;
+      font-size: 14px;
+  }
+  
+  body.avm-messenger .default_card_link a {
+      font-size: 14px;
+      color: #1563FF;
+  }
+  
+  /* .avaamo__icon img {
+      background-color: #0071c5;
+      border-radius: 50%;
+      -webkit-animation-duration: 0.2s;
+      animation-duration: 0.2s;
+      box-shadow: 1px 4px 15px rgb(1 1 1 / 35%);
+  } */
+  
+  /* .messages_nav-bar {
+      background: transparent linear-gradient(94deg, #2E4679 0%, #4E6198 100%) 0% 0% no-repeat padding-box;
+  } */
+  /* .messages_nav-bar {
+    background : #4282FE;
+  } */
+   
+  
+  .messages_nav-bar_title {
+      background-size: 27px;
+      font-size: 0;
+      background-repeat: no-repeat;
+      /* background-image: url("../img/winow-icon.png"); */
+  }
+  
+  .nav-bar h2 {
+      left: 10;
+        font-weight: bold;
+        bottom: -3px;
+  }
+  
+  .avaamo__icon-close-icon:focus.bot-avatar-outline {
+    box-shadow: none;
+  }
+  
+  .center-content {
+    text-align: center;
+  }
+  
+  /*.leavebalance .head {
+      font-weight: 600;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+      display: inline-block;
+      position: relative;
+      left: -11px;
+      top: -11px;
+      border: 1px solid #d7d7d7;
+      border-top-right-radius: 10px;
+      color: #fff;
+      background: repeating-linear-gradient( 30deg, #6b6b6b, #626262 5px, #939393 5px, #525252 5px);
+  }*/
+  
+  .leavebalance .head {
+      font-size: medium;
+      font-weight: 600;
+      text-align: center;
+      padding: 5px;
+      width: 100%;
+      display: inline-block;
+      position: relative;
+  }
+  
+  .leavebalance span {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 300;
+  }
+  
+  span.head span {
+      display: inline-block;
+      margin-bottom: 0;
+  }
+  
+  span.head span:first-child {
+      float: left;
+  }
+  
+  
+  span.balanceratio {
+      margin-bottom: 15px;
+      font-size: medium;
+  }
+  
+  span.finalbalance {
+      margin-top: 15px;
+      font-size: large;
+  }
+  
+  span.balanceNotes {
+      font-size: small;
+      color: grey;
+  }
+  
+  hr.annualhr {
+      height: 1px;
+      background-color: deepskyblue;
+  }
+  hr.sickLhr {
+      height: 1px;
+      background-color: orange;
+  }
+  
+  body.avm-messenger .list-item {
+      border: none;
+  }
+  
+  .default_card_input:nth-child(2) {
+      width: 100%;
+  }
+  
+  body.avm-messenger .attachments .btnex {
+      background-color: #fff;
+      border: 1px solid #1563FF !important;
+      height: 32px;
+      padding: 5px !important;
+      margin: auto;
+      border-radius: 5px;
+      opacity: 1;
+      text-align: center;
+      font-size: 14px;
+      color: #1563FF;
+  }
+  
+  
+  .textbox {
+      height: 32px;
+      font-size: 14px;
+      max-width: 90%;
+  }
+  
+  textarea.textbox, .picklist-textbox {
+      max-width: 90%;
+  }
+  
+  .picklist.list {
+      width: 90%;
+  }
+  
+  .btnex.default_card_submit {
+      margin: 10px 0px 0px 0px !important;
+      width: 90% !important;
+  }
+
+  .btnex.default_card_check {
+    margin: 0px 0px 0px 0px !important;
+    width: 100% !important;
+}
+  
+  .composer__container__preview__option {
+      border: none;
+  }
+  
+  /* Profile Update */
+  
+  .default_card_description .default_card {
+      border: none !important;
+      margin-left: -12.5px;
+  }
+  
+  /* Modify Leave */
+  
+  div[aria-label="Bot sent, Card., Duration of leave, actions available. Use tab to navigate through the items., "] .default_card>div:last-child {
+      padding-top: 0px !important;
+  }
+  
+  div[aria-label="Bot sent, Card., Duration of leave, actions available. Use tab to navigate through the items., "] body.avm-messenger .item-subtitle {
+      display: block;
+      max-height: fit-content;
+  }
+  
+  
+  div[aria-label="Bot sent, Card., Duration of leave, actions available. Use tab to navigate through the items., "] .composer__container__preview__option {
+      padding: 0.32em;
+      margin-bottom: 0.37em;
+  }
+  
+  div[aria-label="Bot sent, Card., Duration of leave, actions available. Use tab to navigate through the items., "] .composer {
+      padding: 0.25em 0;
+      width: 100%;
+  }
+  
+  div[aria-label="Bot sent, Card., Duration of leave, actions available. Use tab to navigate through the items., "] .composer__container__preview__container__options {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  div[aria-label="Bot sent, Card., Duration of leave, actions available. Use tab to navigate through the items., "] .composer .composer__container__preview__container .composer__container__preview__option {
+      margin-right: 0.3em;
+      width: 45%;
+  }
+  
+  div[aria-label="Bot sent, Card., Duration of leave, actions available. Use tab to navigate through the items., "] .composer__container__preview__option:last-child {
+      margin-bottom: 0.37em;
+  }
+  
+  div[aria-label="Bot sent, Card., Duration of leave, actions available. Use tab to navigate through the items., "] .default_card_input {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  
+  div[aria-label="Bot sent, Card., Duration of leave, actions available. Use tab to navigate through the items., "] .default_card_input>div:nth-child(3),
+  .default_card_input>div:nth-child(4) {
+      width: 47.5%;
+  }
+  
+  
+  div[aria-label="Bot sent, Card., Duration of leave, actions available. Use tab to navigate through the items., "] .composer__container__preview__option__circle {
+      width: 15px;
+      height: 15px;
+  }
+  
+  div[aria-label="Bot sent, Card., Duration of leave, actions available. Use tab to navigate through the items., "] input[type="radio"]:checked+.composer__container__preview__option__circle:before {
+      left: 3px;
+      top: 3px;
+      width: 10px;
+      height: 10px;
+      background-size: contain;
+      background: #1563FF 0% 0% no-repeat padding-box;
+      border-radius: 50%;
+  }
+  
+  
+  /** Apply leave **/
+  
+  div[aria-label="Bot sent, Card., Now, could you add the details for the leave here? 📝, actions available. Use tab to navigate through the items., "] .default_card>div:last-child {
+      padding-top: 0px !important;
+  }
+  
+  div[aria-label="Bot sent, Card., Now, could you add the details for the leave here? 📝, actions available. Use tab to navigate through the items., "] body.avm-messenger .item-subtitle {
+      display: block;
+      max-height: fit-content;
+  }
+  
+  
+  div[aria-label="Bot sent, Card., Now, could you add the details for the leave here? 📝, actions available. Use tab to navigate through the items., "] .composer__container__preview__option {
+      padding: 0.32em;
+      margin-bottom: 0.37em;
+  }
+  
+  div[aria-label="Bot sent, Card., Now, could you add the details for the leave here? 📝, actions available. Use tab to navigate through the items., "] .composer {
+      padding: 0.25em 0;
+      width: 100%;
+  }
+  
+  div[aria-label="Bot sent, Card., Now, could you add the details for the leave here? 📝, actions available. Use tab to navigate through the items., "] .composer__container__preview__container__options {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  div[aria-label="Bot sent, Card., Now, could you add the details for the leave here? 📝, actions available. Use tab to navigate through the items., "] .composer .composer__container__preview__container .composer__container__preview__option {
+      margin-right: 0.3em;
+      width: 45%;
+  }
+  
+  div[aria-label="Bot sent, Card., Now, could you add the details for the leave here? 📝, actions available. Use tab to navigate through the items., "] .composer__container__preview__option:last-child {
+      margin-bottom: 0.37em;
+  }
+  
+  div[aria-label="Bot sent, Card., Now, could you add the details for the leave here? 📝, actions available. Use tab to navigate through the items., "] .default_card_input {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  
+  div[aria-label="Bot sent, Card., Now, could you add the details for the leave here? 📝, actions available. Use tab to navigate through the items., "] .default_card_input>div:nth-child(3),
+  .default_card_input>div:nth-child(4) {
+      width: 47.5%;
+  }
+  
+  
+  div[aria-label="Bot sent, Card., Now, could you add the details for the leave here? 📝, actions available. Use tab to navigate through the items., "] .composer__container__preview__option__circle {
+      width: 15px;
+      height: 15px;
+  }
+  
+  div[aria-label="Bot sent, Card., Now, could you add the details for the leave here? 📝, actions available. Use tab to navigate through the items., "] input[type="radio"]:checked+.composer__container__preview__option__circle:before {
+      left: 3px;
+      top: 3px;
+      width: 10px;
+      height: 10px;
+      background-size: contain;
+      background: #1563FF 0% 0% no-repeat padding-box;
+      border-radius: 50%;
+  }
+  
+  div[aria-label="Bot sent, Card., , actions available. Use tab to navigate through the items., "]
+  .default_card>div:first-child {
+    margin: 0px auto 10px auto !important;
+  }
+  
+  div[aria-label="Bot sent, Card., , actions available. Use tab to navigate through the items., "]
+  .default_card {
+    padding: 15px 0px 5px 0px !important;
+  }
+  
+  .avm-messenger .custom-feedback-container {
+      display: flex;
+      position: relative;
+  }
+  .avm-messenger .custom-feedback-container label {
+      padding-top: 13px;
+      padding-right: 15px;
+  }
+  .avm-messenger .custom-feedback.positive:before {
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      float: left;
+      content: "\e907";
+      font-size: 30px;
+      color: #0d86de;
+      font-family: "AvaamoIcons" !important;
+  }
+  .avm-messenger .custom-feedback.negative:before {
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      float: left;
+      content: "\e906";
+      font-size: 30px;
+      color: #0d86de;
+      font-family: "AvaamoIcons" !important;
+  }
+  .avm-messenger .custom-feedback.positive.checked:before {
+      content: "\e904" !important;
+      display: flex;
+  }
+  .avm-messenger .custom-feedback.negative.checked:before {
+      content: "\e905" !important;
+      display: flex;
+  }
+  .custom_list_wrapper2{
+    margin-top: -24px;
+    margin-bottom: -16px;
+  }
+  
+  .custom_list_wrapper1{
+    margin-bottom: -16px;
+  }
+  
+  .custom_list_wrapper3{
+    margin-top: -24px;
+  }
+  body.avm-messenger .default_card_description .dockp{
+    font-size: inherit
+  }
+  
+  body.avm-messenger .default_card_description .dockp li, body.avm-messenger .default_card_description .dockp p{
+    font-size: inherit;
+  }
+  
+/*------------ select -----------*/
+.custom-select {
+  position: relative;
+}
+
+.custom-select input {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 32px;
+  width: 234px;
+  color: #000000;
+
+}
+
+.custom-select input:hover {
+  border-color: none;
+}
+
+.custom-select input:focus-visible {
+  border-color: none !important;
+}
+
+.custom-select input:focus {
+  border-color: none;
+}
+
+.custom-select ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+  z-index: 999;
+  width: 234px;
+}
+
+.custom-select li {
+  padding: 6px;
+  cursor: pointer;
+  margin-left: 0px;
+  color: gray;
+}
+
+.custom-select li:hover {
+  background-color: lightgray;
+}
+
+.avm_accessible_txt_box_helper:hover {
+  outline: 1px solid #1563FF;
+}
+
+.form-check {
+  display: inline-flex;
+  margin-right: 10px;
+  padding: 5px 0px;
+}
+
+.form-check-input {
+  margin-top: -3px !important;
+}
+
+.form-check-label {
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.service_icon {
+  width: 80px !important;
+  height: 80px !important;
+  cursor: pointer;
+  border-radius: 50% !important;
+  border: 4px solid rgb(171, 209, 219);
+}
+
+.service_icon_small {
+  width: 50px !important;
+  height: 50px !important;
+  cursor: pointer;
+  border-radius: 50% !important;
+  border: 4px solid rgb(236, 176, 176);
+}
+
+.service_icon_tiny {
+  width: 40px !important;
+  height: 40px !important;
+  cursor: pointer;
+  border-radius: 50% !important;
+  border: 4px solid lightgray;
+}
+
+.link {
+  padding: 5px;
+  font-size: 15px;
+  color: blue !important;
+}
+/* 
+.body-max-size {
+  max-width: 510px !important;
+  width: 510px !important;
+} */

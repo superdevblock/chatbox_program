@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>chat bot</title>
+	<script src="./jquery.min.js"></script>
+	<style>
+		.botArea {
+			width: 425px;
+			height: 700px;
+			position: absolute;
+			bottom: 80px;
+			right: 15px;
+			border-radius: 5px;
+			display: none;
+			border: none;
+		}
+
+		.botBtn {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			border: none;
+			position: absolute;
+			bottom: 15px;
+			right: 15px;
+			font-size: 40px;
+			background-color: #157acb;
+			color: #FFFFFF;
+			user-select: none;
+		}
+
+		.botBtn label {
+			cursor: pointer;
+		}
+
+		.botBtn:hover{
+			background-color: #157a11;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".botBtn").click(function() {
+				if ($(".botArea").attr("state") == "no") {
+					$(".botArea").fadeIn();
+					$(".botArea").attr("state", "yes");
+				} else if ($(".botArea").attr("state") == "yes") {
+					$(".botArea").fadeOut();
+					$(".botArea").attr("state", "no")
+				}
+			});
+		})
+	</script>
+</head>
+<body style="width: 100%; height: 100%; background-color: lightgray; overflow: hidden;">
+	<iframe class="botArea"  src="./bot/index.html" state="no">
+	</iframe>
+	<button class="botBtn"><label>!</label></button>
+</body>
+</html>

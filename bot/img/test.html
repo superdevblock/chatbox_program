@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Iris Chatbot</title>
+      <style>
+         /* Centering the elements */
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff; /* Change this to your preferred background color */
+         }
+         .chat-window {
+            display: flex;
+            flex-direction: column;
+            width: 500px; /* Change this to your desired chat window width */
+            height: 700px; /* Change this to your desired chat window height */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+         }
+         .chat-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #289fff; /* Change this to your preferred header color */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 10px;
+         }
+         .chat-header__title {
+            font-size: 20px;
+            color: #fff; /* Change this to your preferred title color */
+         }
+         .close-button {
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff; /* Change this to your preferred close button color */
+         }
+         .iris-image {
+            margin: 20px auto;
+         }
+         .island-checkboxes {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+         }
+         .island-checkboxes__label {
+            margin-right: 10px;
+            font-size: 14px;
+         }
+         .activity-links {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: auto;
+            padding-bottom: 20px;
+         }
+         .activity-link {
+            cursor: pointer;
+            color: #289fff; /* Change this to your preferred link color */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+         }
+         .activity-link:hover {
+            text-decoration: underline;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="chat-window">
+            <div class="chat-header">
+               <div class="chat-header__title">Iris</div>
+               <div class="close-button">&times;</div>
+            </div>
+            <img class="iris-image" src="./full_avatar.png" width=150px, height=183px alt="Iris">
+            <div class="island-checkboxes">
+               <label class="island-checkboxes__label"><input type="checkbox" value="maui">Maui</label>
+               <label class="island-checkboxes__label"><input type="checkbox" value="kauai">Kauai</label>
+               <label class="island-checkboxes__label"><input type="checkbox" value="big-island">Big Island</label>
+               <label class="island-checkboxes__label"><input type="checkbox" value="oahu">Oahu</label>
+               <label class="island-checkboxes__label"><input type="checkbox" value="all-islands">All Islands</label>
+            </div>
+            <div class="activity-links">
+               <a class="activity-link" href="#">Ocean Activities</a>
+               <a class="activity-link" href="#">Land Activities</a>
+               <a class="activity-link" href="#">Surprise Me</a>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

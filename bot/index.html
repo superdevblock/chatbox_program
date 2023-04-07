@@ -1,0 +1,157 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Hawaiifun Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <link rel="stylesheet" media="screen" href="./style/cropper.css" id="webchannel_css">
+    <link rel="stylesheet" href="./style/style.css" id="webchannel_custom_css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/moment.min.js"></script>
+    <script src="./js/engine.js"></script>
+  </head>
+  <body class="avm-messenger chrome 111 muted chrome 111">
+    <div id="avm-aria-live" class="_avm-live-updates" aria-live="assertive" role="status"></div>
+      <main class="conversation avm-messenger ">
+        <div class="top" id="messages-contacts-region">
+          <header class="nav-bar messages_nav-bar">
+            <div class="messages_nav-bar_title">
+              <h2 class="title" tabindex="0" aria-label="Hawaiifun Bot">Hawaiifun Bot</h2>
+              <a class="close avaamo_popup__close close-bot avm-icon-cross" role="button" aria-label="Close WiNow" href="javascript:void(0)" style="display: none;"></a>
+            </div>
+          </header>
+          <div class="messages-view">
+            <div id="snackbar">Please check your network connection</div>
+            <div id="snackbar_invalid">You must check at least one island item</div>
+            <div id="message-list-region" tabindex="0" role="region" aria-label="Chat Conversations. Press page up and page down keys to navigate through the messages" class="messages">
+              <section id="messages-list" class="conversations">
+                <div class="conversation-item clearfix not-mine" id="message-297fc782-0a75-442e-8cb9-da9fa2652329" request-message-id="46996a2c-d76b-4e34-9b0f-7ac4bafe3332" tabindex="-1" aria-label="" role="group">
+                  <div class="media">
+                    <div class="media-body center-content">
+                      <header class="messages__media__header">
+                        <h1 class="name">Iris</h1>
+                        <div class="insight-toggle" title="Message Insight" data-message-uuid="undefined"></div>
+                      </header>
+                      <div class="message-wrap">
+                        <div class="desc flexColumn">
+                          <div class="default_card attachments" style="max-width:unset;width:unset;">
+                            <div class="default_card_title" style="padding-bottom: 0px;">Hi Ryan</div>
+                            <div class="default_card_description" >
+                              <div style="display:flex; justify-content:center; align-items:center">
+                                <div>
+                                  I am Iris, Your virtual assistant! 👋 How are you today?
+                                </div>
+                              </div>
+                            </div>
+                            <div class="iris-pic" aria-hidden="true">
+                              <div>
+                                <img class="service_icon_tiny" src="./img/5.png" alt="">
+                              </div>
+                              <div style="display:inline-flex; margin-top: 10px;">
+                                <div style="padding-top: 10px;">
+                                  <img class="service_icon_small" src="./img/5.png" alt="">
+                                  <img class="service_icon" src="./img/3.png" alt="" style="margin-top: 30px;"><br>
+                                </div>
+                                <div>
+                                  <img draggable="false" alt="Chat bot avatar" src="./img/full_avatar.png">
+                                </div>
+                                <div style="padding-top: 10px;">
+                                  <img class="service_icon_small" src="./img/2.png" alt="">
+                                  <img class="service_icon" src="./img/1.png" alt="" style="margin-top: 30px;"><br>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="container">
+                              <a href="#" class="link">Ocean Activities</a>
+                              <a href="#" class="link">Landing Activities</a>
+                              <a href="#" class="link">Surprise Me</a>
+                            </div>
+                            <div class="container" id="answerPanel">
+                              <div style="border-bottom: 1px solid lightgray;">
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="flexCheckMaui">
+                                  <label class="form-check-label" for="flexCheckMaui">Maui</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="flexCheckKauai">
+                                  <label class="form-check-label" for="flexCheckKauai">Kauai</label>
+                                </div>   
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="flexCheckOahu">
+                                  <label class="form-check-label" for="flexCheckOahu">Oahu</label>
+                                </div>   
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="flexCheckBigIsland">
+                                  <label class="form-check-label" for="flexCheckBigIsland">Big Island</label>
+                                </div>   
+                              </div>
+                              <div>
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input" type="checkbox" id="flexCheckAll">
+                                  <label class="form-check-label" for="flexCheckAll">All Islands</label>
+                                </div>   
+                              </div>     
+                              <div class="center-content" style="margin-top: 17px;">
+                                <button id="submitAnswer" type="button" class="botMenu__menu__item" target="_blank" actionname="Submit Answer" webview_height_ratio="tall" aria-label="Submit Answer">Submit Answer</button>
+                              </div>                        
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+         </div>
+         <form class="bottom conversation-form" id="messageEditor-region">
+            <div class="editor-wrapper">
+              <div class="location_error_message" style="padding: 10px; color: red; display: none;">Looks like your browser isn't able to share your location right now. Please try again or enter your location manually.</div>
+              <div id="quick-reply-container" class="quick-reply-container hidden" aria-label="Quick replies list" role="group"></div>
+                <div class="compose-message-fields">
+                  <button type="button" aria-expanded="false" aria-controls="bot-menu-container" class="ptr clear-btn-defaults botMenu__toggleEditor anchor botMenu__action-icon avm-icon-menu locale-trans switch-menu" data-ele-name="switch_menu" data-show="menu" aria-label="Switch to chat agent menu" id="toggleMenu" ></button>
+                  <div class="textarea-wrap alignItemsCenter">
+                    <textarea id="queryTextbox" dir="auto" name="message" class="txt-common animated editor locale-trans type-message" data-ele-name="message_box" placeholder="Type a message..." aria-label="Chat agent textbox" role="textbox" style="height: 18px;"></textarea>
+                  </div>
+                  <button type="button" class="ptr clear-btn-defaults locale-trans send"  id="sendMessage" data-ele-name="send" aria-label="Send">Send</button>
+                </div>
+                <div class="bot dflex flexColumn hidden" id="bot-menu-container" aria-label="Menu options" role="group">
+                  <div class="botMenu dflex ptr">
+                    <div class="botMenu__title flex dflex flexJustifyCenter locale-trans menu-options" data-ele-name="menu_options" title="Menu options">Options</div>
+                    <button type="button" id="hideMenu" class="ptr clear-btn-defaults locale-trans botMenu__toggleMenu avm-icon-down" data-ele-name="toggle_actions" aria-label="Close Menu" title="Close Menu" aria-expanded="true"></button>
+                  </div>
+                  <div class="bot-menu-cont">
+                    <div class="botMenu__menu dflex" role="group">
+                      <button id="showMenu" class="botMenu__menu__item" type="button" srcdoc="undefined" actionname="Main Menu" webview_height_ratio="tall" aria-label="Main Menu">Feedback</a>
+                      <button id="clearConversation" type="button" class="botMenu__menu__item" target="_blank" type="deeplink" srcdoc="undefined" actionname="Clear Conversation" webview_height_ratio="tall" aria-label="Clear Conversation">Clear Conversation</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </form>
+      </main>
+      <div class="modal avm-messenger fade feedback_container" id="feedback_container" tabindex="-1" role="dialog" aria-labelledby="feedback_title" aria-modal="true">
+           <div class="modal-dialog" id="feedback_body">
+              <div class="modal-content">
+                 <div class="modal-header text-center">
+                    <h4 class="modal-title feedback_title" id="feedback_title">Feedback</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close feedback"></button>
+                 </div>
+              </div>
+           </div>
+      </div>
+      <div class="modal avm-messenger fade feedback_container custom_feedback_container" id="custom_feedback_container" tabindex="-1" role="dialog" aria-labelledby="feedback_title" aria-modal="true">
+           <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header text-center" id="custom_feedback_header">
+                    <h4 class="modal-title feedback_title locale-trans" data-ele-name="feedback" id="custom_feedback_title">Feedback</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close feedback"></button>
+                 </div>
+                 <div class="modal-body feedback-modal-body" id="custom_feedback_body">
+                 </div>
+              </div>
+           </div>
+      </div>
+    </div>
+  </body>
+</html>
